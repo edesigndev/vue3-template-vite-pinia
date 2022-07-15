@@ -1,6 +1,36 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + Pinia + Vue Router
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Template basico de Vue3 con Vite, se le agrego un ejemplo basico de Pinia(Vuex 5)
+
+## Configuración de ESLint y Prettier con VS Code para Vue 3
+
+Desactivar la validación de la plantilla de Vetur y dejar que ESLint la maneje según las reglas del .eslintrc.js archivo.
+
+// Code/User/settings.json
+```Javascript
+"vetur.validation.template": false
+```
+Configuración de automatización para que Prettier vuelva a formatear el código o para que ESLint corrija automáticamente los problemas reparables.
+// Code/User/settings.json
+```Javascript
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}
+```
+
+También debemos asegurarnos de que nuestros archivos vue y js estén mejor configurados como el formateador predeterminado con la siguiente configuración:
+// Code/User/settings.json
+```Javascript
+"[vue]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+```
 
 ## Recommended IDE Setup
 
